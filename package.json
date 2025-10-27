@@ -36,6 +36,7 @@
     "@angular/cli": "~20.3.6",
     "@angular/compiler-cli": "^20.3.5",
     "@apphosting/adapter-angular": "^17.2.16",
+    "@ngneat/spectator": "^22.0.0",
     "@tailwindcss/postcss": "^4.1.14",
     "@types/express": "^5.0.3",
     "@types/jest": "^30.0.0",
