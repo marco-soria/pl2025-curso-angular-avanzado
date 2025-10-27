@@ -15,5 +15,7 @@ export default {
     '!<rootDir>/node_modules/',
     '!<rootDir>/test/',
   ],
+
   transformIgnorePatterns: ['node_modules/(?!.*\\.mjs$)'],
+  maxWorkers: 1,
 } satisfies Config;
