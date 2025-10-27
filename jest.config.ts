@@ -8,6 +8,7 @@ export default {
     '@products/(.*)': '<rootDir>/src/app/domains/products/$1',
     '@info/(.*)': '<rootDir>/src/app/domains/info/$1',
     '@env/(.*)': '<rootDir>/src/environments/$1',
+    '^@faker-js/faker$': '<rootDir>/src/__mocks__/@faker-js/faker.ts',
   },
   coverageDirectory: './coverage',
   collectCoverageFrom: [
@@ -16,6 +17,6 @@ export default {
     '!<rootDir>/test/',
   ],
 
-  transformIgnorePatterns: ['node_modules/(?!.*\\.mjs$)'],
+  transformIgnorePatterns: ['node_modules/(?!(@faker-js|.*\\.mjs$))'],
   maxWorkers: 1,
 } satisfies Config;
